@@ -7,3 +7,89 @@
   --destaque-inverso
   --fundo-card
 */
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(0, 149, 248);
+  padding: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.material-symbols-outlined {
+  color: white;
+  margin-left: 20px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+  background-color: rgba(175, 175, 175, 0.712);
+  transition-duration: 0.3s;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 90% 1fr;
+  grid-template-rows: 380px 90%;
+}
+
+.ficha {
+  grid-area: 1 / 2 / span 1 / span 1;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ficha > img {
+  border: 1px solid rgb(0, 149, 248);
+  border-radius: 50%;
+}
+
+.texto {
+  margin-top: -30px;
+}
+
+.texto > h2 {
+  padding: 5px;
+  color: rgb(0, 149, 248);
+}
+
+div.redes {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+div.redes > img {
+  width: 8%;
+  cursor: pointer;
+}
+
+div.redes > img:hover {
+  background-color: rgb(0, 149, 248);
+  border-radius: 10px;
+  transition-duration: 0.3s;
+}
+
+.detalhes {
+ 
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
+footer {
+  background-color: rgb(0, 149, 248);
+  padding: 10px;
+}
+
