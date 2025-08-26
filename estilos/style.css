@@ -95,6 +95,17 @@ div.redes > img:hover {
   border-radius: 10px;
 }
 
+div.skills {
+  text-align: left;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+div.skills > h3 {
+  font-size: 1em;
+  font-weight: bolder;
+}
+
 footer {
   background-color: rgb(0, 149, 248);
   padding: 10px;
