@@ -31,7 +31,7 @@ body {
 header {
   background-color: var(--destaque);
   color: var(--texto);
-  padding: 10px;
+  padding: 15px;
 }
 
 nav#menu > ul {
@@ -44,10 +44,11 @@ nav#menu > ul {
 
 nav#menu a {
   color: white;
-  padding: 10px;
+  padding: 12px;
   color: var(--texto-inverso);
   border-radius: 10px;
   cursor: pointer;
+  margin-left: 5px;
 }
 
 nav#menu a:hover {
@@ -81,21 +82,26 @@ h2 {
 }
 
 div.redes {
-  margin-top: 5px;
+  margin-top: 15px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-div.redes > img {
-  width: 8%;
+div.redes > a {
+  text-decoration: none;
+  padding: 5px;
+  color: var(--destaque);
+  font-size: 30px;
   cursor: pointer;
 }
 
-div.redes > img:hover {
-  background-color: rgb(0, 149, 248);
+div.redes > a:hover {
+  background-color: var(--destaque-inverso);
+  color: white;
   border-radius: 10px;
-  transition-duration: 0.3s;
+  margin-top: -2px;
+  transition-duration: 0.5s;
 }
 
 .detalhes {
