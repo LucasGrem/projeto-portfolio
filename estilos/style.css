@@ -61,7 +61,7 @@ nav#menu a:hover {
 main {
   display: grid;
   grid-template-columns: auto 90% auto;
-  grid-template-rows: 450px auto;
+  grid-template-rows: 510px auto;
   gap: 20px;
   margin-top: 20px;
 }
@@ -155,15 +155,40 @@ div.redes > a:hover {
   border-radius: 8px;
 }
 
-div.skills {
-  text-align: left;
-  display: flex;
-  flex-flow: column wrap;
+div.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
 
-div.skills > h3 {
-  font-size: 1em;
-  font-weight: bolder;
+div.skills-container .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+div.skills-container .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+div.skills-container .porcentagem {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+div.skills-container .barra {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background-color: var(--fundo-principal);
+}
+
+div.skills-container .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 5px;
 }
 
 footer {
@@ -171,4 +196,10 @@ footer {
   padding: 10px;
   text-align: center;
   color: white;
+}
+
+@media screen and (min-width: 768px) {
+  div.skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
