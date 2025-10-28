@@ -67,13 +67,12 @@ nav#menu a:hover {
 main {
   display: grid;
   grid-template-columns: auto 90% auto;
-  grid-template-rows: 510px auto;
   gap: 20px;
   margin-top: 20px;
 }
 
 #ficha {
-  grid-area: 1 / 2 / span 1 / span 1;
+  grid-column: 2;
 
   display: flex;
   flex-flow: column wrap;
@@ -121,15 +120,14 @@ main {
 }
 
 .redes > a:hover {
-  background-color: var(--destaque-inverso);
-  color: white;
+  color: var(--destaque-inverso);
   border-radius: 10px;
   margin-top: -2px;
   transition-duration: 0.5s;
 }
 
 #detalhes {
-  grid-area: 2 / 2 / span 1 / span 1;
+  grid-column: 2;
 }
 
 #detalhes > div {
@@ -285,6 +283,29 @@ footer a:hover {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    grid-template-columns: auto 300px 1fr auto;
+  }
+
+  #icon-casa {
+    display: none;
+  }
+
+  section#ficha {
+    grid-column: 2 / 3;
+    height: fit-content;
+    position: sticky;
+    top: 65px;
+  }
+
+  #ficha > p {
+    text-align: left;
+  }
+
+  section#detalhes {
+    grid-column: 3 / 4;
+  }
+
   div.skills-container {
     grid-template-columns: 1fr 1fr;
   }
